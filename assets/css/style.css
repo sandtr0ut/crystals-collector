@@ -1,21 +1,35 @@
 @import url("reset.css");
 
+* {
+  box-sizing: border-box;
+}
+
+
 main {
-  background-image: url("../images/morocco.png");
+  background-image: url("../images/skyscraper.png");
   background-position: left top;
   background-repeat: repeat;
   width: 100%;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .container-fluid {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  /* align-items: flex-start; */
   
 }
 
 /* children of the 'main' flex-container */
 .mFlexItem {
-  margin: 0 20px 20px 20px;
+  margin: 0 auto 10px 20px;
+}
+/* sub-containers */
+.container {
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: flex-start; */
 }
 
 /* Title Box */
@@ -38,13 +52,17 @@ h1 {
 .instructionsBox {
   min-height: 400px;
   background-color: bisque;
-  min-width: 400px;
-  width: 50%;
+  max-width: 670px;
+  /* width: 50%; */
 }
 p {
   padding: 10px;
   color: green;
   line-height: 1.6rem;
+  font-size: 18px;
+}
+p:first-child {
+  padding-top: 20px;
 }
 
 /* Target & Scoreboard Box/Row */
@@ -55,16 +73,16 @@ p {
   
 }
 .targetBox {
-  margin-right: 20px;
+  margin-right: 10px;
   background-color: lightgreen;
-  min-width: 300px;
+  min-width: 330px;
 }
 #targetNum {
   padding: 10px;
 }
 .scoreBox {
   background-color: aqua;
-  min-width: 140px;
+  min-width: 160px;
 }
 .scoreText {
   padding: 20px 10px 20px 10px;
@@ -75,11 +93,18 @@ p {
 .buttonRow {
   margin-bottom: 10px;
 }
+.imageButton {
+  margin-right: 10px;
+  box-shadow: 5px 3px 10px gray;  
+}
+.imageButton:hover {  
+  transform: scale(1.05);
+}
 
 /* Total Score Box */
 .total-score {
   min-height: 180px;
-  max-width: 300px;
+  flex-direction: column;
 }
 
 #totalScoreHeading {
@@ -87,13 +112,14 @@ p {
   background-color: teal;
   color: white;
   padding: 10px 10px 10px 10px;
+  min-width: 300px;
 }
 #totalScoreNum {
-  margin-top: 10px;
   background-color: teal;
   color: white;
   padding: 10px 10px 10px 10px;
   min-height: 120px;
   font-size: 30px;
   font-weight: bold;
+  min-width: 300px;
 }

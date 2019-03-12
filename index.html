@@ -11,11 +11,11 @@
   
 <main class="container-fluid">
   
-  <div class="titleBox">
+  <div class="titleBox mFlexItem">
     <h1 id="titleText">CrystalsCollector!</h1>
   </div>
   
-  <div class="instructionsBox">
+  <div class="instructionsBox mFlexItem">
     <p>You will be given a random number at the start of the game.</p>
     <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
     <p>You win the game by matching your total score to the random number.  You lose the game if your total score goes above the random number.</p>
@@ -24,20 +24,20 @@
   </div>
   
   <!-- wrap these two div's in a container for flex-box functionality -->
-  <div class="container">
+  <div class="container target-container mFlexItem">
     <div class="targetBox">
       <!-- create blank h1 tag and assign id so jQuery can insert the target number (a random number between 19 and 120) -->
       <h1 id="targetNum">0</h1>
     </div>
     <div class="scoreBox">
       <!-- create W/L headings and assign id's so jQuery can insert player's dynamically-updated win/loss record -->
-      <h2>Wins: <span id="wins">0</span></h2>
-      <h2>Losses: <span id="losses">0</span></h2>
+      <h2 class="scoreText">Wins: <span id="wins">0</span></h2>
+      <h2 class="scoreText">Losses: <span id="losses">0</span></h2>
     </div>
   </div>
   
   <!-- wrap buttons in flex container -->
-  <div class="container">
+  <div class="container buttonRow mFlexItem">
     <input type="image" src="assets/images/blueCrystal.jpg" 
     class="imageButton" id="button-1" name="b1Blue"/>
     <input type="image" src="assets/images/greenCrystal.jpg" class="imageButton" id="button-2" name="b2Green"/>
@@ -45,7 +45,7 @@
     <input type="image" src="assets/images/ArgonCrystal.jpg" class="imageButton" id="button-4" name="b4Argon"/>
   </div>
   
-  <div class="container total-score">
+  <div class="container total-score mFlexItem">
     <h2 id="totalScoreHeading">Your total score is:</h2>
     <h2 id="totalScoreNum">0</h2>
   </div>

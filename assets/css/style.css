@@ -1,2 +1,99 @@
 @import url("reset.css");
 
+main {
+  background-image: url("../images/morocco.png");
+  background-position: left top;
+  background-repeat: repeat;
+  width: 100%;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  
+}
+
+/* children of the 'main' flex-container */
+.mFlexItem {
+  margin: 0 20px 20px 20px;
+}
+
+/* Title Box */
+.titleBox {
+  min-height: 100px;
+  background-color: orangered;
+  max-width: 350px;
+}
+#titleText {
+  color: white;
+  margin: auto 0;
+  padding: 30px 10px 30px 10px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Instructions Box */
+.instructionsBox {
+  min-height: 400px;
+  background-color: bisque;
+  min-width: 400px;
+  width: 50%;
+}
+p {
+  padding: 10px;
+  color: green;
+  line-height: 1.6rem;
+}
+
+/* Target & Scoreboard Box/Row */
+.target-container {
+  min-height: 120px;
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+.targetBox {
+  margin-right: 20px;
+  background-color: lightgreen;
+  min-width: 300px;
+}
+#targetNum {
+  padding: 10px;
+}
+.scoreBox {
+  background-color: aqua;
+  min-width: 140px;
+}
+.scoreText {
+  padding: 20px 10px 20px 10px;
+  font-size: 18px;
+}
+
+/* Button Box/Row */
+.buttonRow {
+  margin-bottom: 10px;
+}
+
+/* Total Score Box */
+.total-score {
+  min-height: 180px;
+  max-width: 300px;
+}
+
+#totalScoreHeading {
+  margin-bottom: 10px;
+  background-color: teal;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+#totalScoreNum {
+  margin-top: 10px;
+  background-color: teal;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  min-height: 120px;
+  font-size: 30px;
+  font-weight: bold;
+}

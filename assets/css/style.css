@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 main {
   background-image: url("../images/skyscraper.png");
   background-position: left top;
@@ -18,7 +17,6 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   /* align-items: flex-start; */
-  
 }
 
 /* children of the 'main' flex-container */

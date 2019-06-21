@@ -17,6 +17,8 @@ Code Validation | W3C
 
 #### How the App Works
  * There will be four crystals displayed as buttons on the page.
+ 
+ |  ![ArgonCrystal](assets/images/ArgonCrystal.jpg)  |  ![blueCrystal](assets/images/blueCrystal.jpg)  |  ![greenCrystal](assets/images/greenCrystal.jpg)  |  ![orangeCrystal](assets/images/orangeCrystal.jpg)  |
 
  * The player will be shown a random number at the start of the game.
 

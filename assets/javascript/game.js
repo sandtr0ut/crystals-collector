@@ -27,6 +27,7 @@ $(document).ready(function () {
 
         //Reset score
         score = 0;
+        scoreNum.show();
         scoreNum.html(score);
 
         //Assign new crystal values
@@ -53,11 +54,13 @@ $(document).ready(function () {
             tt.html("YOU LOSE!")
             losses++;
             $("#losses").html(losses);
+            scoreNum.hide();
             setTimeout(resetGame, 3000);
         } else if (score == targetScore) {
             tt.html("WINNER!")
             wins++;
             $("#wins").html(wins);
+            scoreNum.hide();
             setTimeout(resetGame, 3000);
         }
     });

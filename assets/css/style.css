@@ -1,123 +1,209 @@
 @import url("reset.css");
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 main {
-  background-image: url("../images/skyscraper.png");
-  background-position: left top;
-  background-repeat: repeat;
-  width: 100%;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("../images/skyscraper.png");
+    background-position: left top;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100%;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-.container-fluid {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
 }
 
 /* children of the 'main' flex-container */
 .mFlexItem {
-  margin: 0 auto 10px 20px;
+    margin: 0 auto 10px 20px;
 }
+
 /* sub-containers */
 .container {
-  display: flex;
-  justify-content: flex-start;
-  /* align-items: flex-start; */
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: flex-start; */
 }
 
 /* Title Box */
 .titleBox {
-  min-height: 100px;
-  background-color: orangered;
-  max-width: 350px;
+    min-height: 100px;
+    background-color: orangered;
+    /* max-width: 350px; */
 }
+
 #titleText {
-  color: white;
-  margin: auto 0;
-  padding: 30px 10px 30px 10px;
+    color: white;
+    margin: auto 0;
+    padding: 30px 10px 30px 10px;
 }
+
 h1 {
-  font-size: 40px;
-  font-weight: bold;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 /* Instructions Box */
-.instructionsBox {
-  min-height: 400px;
-  background-color: bisque;
-  max-width: 670px;
-  /* width: 50%; */
+#instructionsBox {
+    /* min-height: 400px; */
+    color: green;
+    background-color: bisque;
+    text-align: center;
+    max-width: 670px;
+    padding: 10px;
+    /* width: 50%; */
 }
+
+.menu {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* padding: 2em;
+    margin: -2em; */
+}
+
 p {
-  padding: 10px;
-  color: green;
-  line-height: 1.6rem;
-  font-size: 18px;
+    text-align: left;
+    padding: 10px;
+    color: green;
+    line-height: 1.6rem;
+    font-size: 18px;
 }
+
 p:first-child {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 /* Target & Scoreboard Box/Row */
 .target-container {
-  min-height: 120px;
-  display: flex;
-  flex-flow: row wrap;
-  
+    min-height: 120px;
+    display: flex;
+    flex-flow: row wrap;
+
 }
+
 .targetBox {
-  margin-right: 10px;
-  background-color: lightgreen;
-  min-width: 330px;
+    margin-right: 10px;
+    background-color: lightgreen;
+    min-width: 330px;
 }
+
 #targetNum {
-  padding: 10px;
+    padding: 10px;
 }
+
 .scoreBox {
-  background-color: aqua;
-  min-width: 160px;
+    background-color: aqua;
+    min-width: 160px;
 }
+
 .scoreText {
-  padding: 20px 10px 20px 10px;
-  font-size: 18px;
+    padding: 20px 10px 20px 10px;
+    font-size: 18px;
 }
 
 /* Button Box/Row */
 .buttonRow {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
+
 .imageButton {
-  margin-right: 10px;
-  box-shadow: 5px 3px 10px gray;  
+    margin-right: 10px;
+    box-shadow: 5px 3px 10px gray;
 }
-.imageButton:hover {  
-  transform: scale(1.05);
+
+.imageButton:hover {
+    transform: scale(1.05);
 }
 
 /* Total Score Box */
 .total-score {
-  min-height: 180px;
-  flex-direction: column;
+    min-height: 180px;
+    flex-direction: column;
 }
 
 #totalScoreHeading {
-  margin-bottom: 10px;
-  background-color: teal;
-  color: white;
-  padding: 10px 10px 10px 10px;
-  min-width: 300px;
+    margin-bottom: 10px;
+    background-color: teal;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    min-width: 300px;
+    font-size: 36px;
 }
+
 #totalScoreNum {
-  background-color: teal;
-  color: white;
-  padding: 10px 10px 10px 10px;
-  min-height: 120px;
-  font-size: 30px;
-  font-weight: bold;
-  min-width: 300px;
+    background-color: teal;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    min-height: 120px;
+    font-size: 36px;
+    font-weight: bold;
+    min-width: 300px;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-flow: row wrap;
+    }
+    .target-container {
+        margin: 0 auto 10px auto;
+    }
+    .scoreBox {
+        order: 1;
+        margin: 5px 20px;
+        width: 100%;
+        padding: 10px;
+    }
+    .scoreText {
+        padding: 5px 10px;
+        font-size: 18px;
+    }
+    .targetBox {
+        order: 2;
+        margin: 5px 20px;
+        width: 100%;
+    }
+    .total-score {
+        margin: 5px auto;
+        width: 100%;
+    }
+    #totalScoreHeading,
+    #totalScoreNum {
+        width: 100%;
+        margin: 5px 20px 5px 20px;
+    }
+    .imageButton {
+        margin: 5px;
+    }
+    .titleBox {
+        margin: 0 20px 5px 20px;
+    }
+    #titleText {
+        font-size: 36px;
+    }
+    #instructionsBox {
+        /* width: 100%; */
+        margin: 10px 20px;
+    }
+    /* .mFlexItem {
+        margin: 0 auto 10px auto;
+    } */
+    .menu {
+        margin-right: 20px;
+    }
+    .buttonRow {
+        margin: 0 auto 10px auto;
+        padding: 10px;
+    }
+    
 }

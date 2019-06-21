@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    //Click-to-show/hide instructions
+    $(".show").click(function () {
+        $(".menu").toggle("slide");
+    });
+    
+    //================================================================
     var scoreNum = $("#totalScoreNum");
     var score = 0;
     var wins = 0;
@@ -7,14 +13,13 @@ $(document).ready(function () {
     var targetScore = 0;
     var crystals = $(".imageButton");
     var tt = $("#titleText");
+    //================================================================
 
-
-    //create a function that will reset the target score when called
     function resetGame() {
 
         //Generate target score
         targetScore = Math.floor(Math.random() * 102 + 19);
-        $("#targetNum").html(targetScore);
+        $("#targetNum").html("Target: " + targetScore);
         console.log(targetScore);
 
         //Update title
@@ -33,6 +38,7 @@ $(document).ready(function () {
             $(crystals[i]).data("crystalValue", randomNum);
         }
     }
+    //================================================================
 
 
     //handle clicks on each of the buttons
@@ -54,7 +60,8 @@ $(document).ready(function () {
             $("#wins").html(wins);
             setTimeout(resetGame, 3000);
         }
+    });
+    //================================================================
 
-    })
     resetGame();
 });

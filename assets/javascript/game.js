@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    //Click-to-show/hide instructions
+    //Click or Tap to show/hide instructions
     $(".show").click(function () {
         $(".menu").toggle("slide");
     });
@@ -42,13 +42,13 @@ $(document).ready(function () {
     //================================================================
 
 
-    //handle clicks on each of the buttons
     crystals.on('click', function () {
         score += $(this).data("crystalValue");
         scoreNum.html(score);
         console.log($(this).data("crystalValue"));
         console.log(score);
         console.log(targetScore);
+        
         //check if score has exceeded/met target
         if (score > targetScore) {
             tt.html("YOU LOSE!")

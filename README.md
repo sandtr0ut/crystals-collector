@@ -6,10 +6,13 @@
 #### Development Tools Used
 Tool | Use
 ---- | ---
-HTML | Page Structure
-CSS | Stylish Styling/ Compatibility
-jQuery/Javascript | DOM Access and Action
-
+Page Structure | HTML
+Stylish, Responsive Styling | CSS
+Logic | Javascript
+HTML/Javascript Interaction | JQuery
+Color Palette Selection | Coolors.co
+Image Editing and Optimization | Pixlr
+Code Validation | W3C
 <br>
 
 #### How the App Works
@@ -32,4 +35,4 @@ jQuery/Javascript | DOM Access and Action
  <br>
  
  #### Backlink References:
- https://sandtr0ut.github.io/Responsive-Portfolio/portfolio.html
+ https://sandtr0ut.github.io/whoisford/index.html

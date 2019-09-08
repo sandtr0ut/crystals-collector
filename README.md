@@ -37,6 +37,6 @@ Code Validation | W3C
  <br>
  
  #### Deployed Link:
- https://sandtr0ut.github.io/whoisford/index.html
+ https://sandtr0ut.github.io/crystals-collector/
  
  See more projects at fordcrosby.com

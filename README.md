@@ -1,22 +1,24 @@
 # CrystalsCollector
 
 <p>
-    <img alt="License: MIT" src="https://img.shields.io/static/v1?label=stack&message=front-end&color=important" target="_blank" />
-
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/sandtr0ut/crystals-collector#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />
+    <img alt="License: MIT" src="https://img.shields.io/static/v1?label=stack&message=front-end&color=important&style=flat-square" />
+    <img alt="Version" src="https://img.shields.io/badge/version-1.2.7-blue.svg?cacheSeconds=2592000&style=flat-square" />
+    <a href="https://github.com/sandtr0ut/crystals-collector#readme">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen?style=flat-square" target="_blank" />
+    </a>
+    <a href="https://github.com/sandtr0ut/crystals-collector/graphs/commit-activity">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green?style=flat-square" target="_blank" />
+    </a>
+    <a href="https://github.com/sandtr0ut/crystals-collector/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/sandtr0ut/crystals-collector?style=flat-square" target="_blank" />
+    </a>
+    <a href="https://sandtr0ut.github.io/crystals-collector/">
+    <img alt="Website" src="https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&style=flat-square&url=https%3A%2F%2Fsandtr0ut.github.io%2Fcrystals-collector%2F" target="_blank">
+    </a>
+    <a href="https://github.com/sandtr0ut/crystals-collector/blob/master/LICENSE">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" target="_blank" />
   </a>
-  <a href="https://github.com/sandtr0ut/crystals-collector/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" target="_blank" />
-  </a>
-  <a href="https://github.com/sandtr0ut/crystals-collector/issues">
-    <img alt="Issues" src="https://img.shields.io/github/issues/sandtr0ut/crystals-collector" target="_blank" />
-  </a>
-  <a href="https://github.com/sandtr0ut/crystals-collector/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" target="_blank" />
-  </a>
-  
+    
 </p>
 
 Essentially, a practice exercise focused on use of jQuery for DOM interaction. The user is shown a random target number at the start of the game in the score box. There are four crystals that load onto the page. Each crystal has a randomly generated number with it as a property. This was the primary challenge of the assignment - figuring out how to associate a non-rendered value with an html-element so said value can be read and/or re-written by the jQuery/JavaScript game logic.

@@ -1,12 +1,8 @@
-<a href=#>
-    <img alt="License: MIT" src="https://img.shields.io/static/v1?label=stack&message=front-end&color=informational&style=for-the-badge" target="_blank" />
-  </a>
-  
-  <br>
-
 # CrystalsCollector
 
 <p>
+    <img alt="License: MIT" src="https://img.shields.io/static/v1?label=stack&message=front-end&color=important" target="_blank" />
+
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/sandtr0ut/crystals-collector#readme">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" target="_blank" />

@@ -7,7 +7,7 @@
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen?style=flat-square" target="_blank" />
     </a>
     <a href="https://github.com/sandtr0ut/crystals-collector/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green?style=flat-square" target="_blank" />
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-blueviolet?style=flat-square" target="_blank" />
     </a>
     <a href="https://github.com/sandtr0ut/crystals-collector/issues">
     <img alt="Issues" src="https://img.shields.io/github/issues/sandtr0ut/crystals-collector?style=flat-square" target="_blank" />
